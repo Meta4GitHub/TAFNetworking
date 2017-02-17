@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		715312FBA768C9105F5B5E6C /* libPods-TAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD427C393F4B721B570B1E60 /* libPods-TAFNetworking.a */; };
+		9D116E621E4ED53800DD6EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E611E4ED53800DD6EB7 /* main.m */; };
+		9D116E651E4ED53800DD6EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E641E4ED53800DD6EB7 /* AppDelegate.m */; };
+		9D116E681E4ED53800DD6EB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E671E4ED53800DD6EB7 /* ViewController.m */; };
+		9D116E6B1E4ED53800DD6EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D116E691E4ED53800DD6EB7 /* Main.storyboard */; };
+		9D116E6D1E4ED53800DD6EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D116E6C1E4ED53800DD6EB7 /* Assets.xcassets */; };
+		9D116E701E4ED53800DD6EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D116E6E1E4ED53800DD6EB7 /* LaunchScreen.storyboard */; };
+		9D116E871E4ED99500DD6EB7 /* HHAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E7B1E4ED99500DD6EB7 /* HHAppContext.m */; };
+		9D116E881E4ED99500DD6EB7 /* HHAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E7E1E4ED99500DD6EB7 /* HHAPIManager.m */; };
+		9D116E891E4ED99500DD6EB7 /* HHUploadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E801E4ED99500DD6EB7 /* HHUploadFile.m */; };
+		9D116E8A1E4ED99500DD6EB7 /* HHNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E821E4ED99500DD6EB7 /* HHNetworkClient.m */; };
+		9D116E8B1E4ED99500DD6EB7 /* HHURLRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E841E4ED99500DD6EB7 /* HHURLRequestGenerator.m */; };
+		9D116E8C1E4ED99500DD6EB7 /* HHService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E861E4ED99500DD6EB7 /* HHService.m */; };
+		9D116E931E4EF5D400DD6EB7 /* HHNetworkCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D116E921E4EF5D400DD6EB7 /* HHNetworkCacheManager.m */; };
+		9D9DBF391E571EE100E5F4FD /* HHNormalAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBF381E571EE100E5F4FD /* HHNormalAPIManager.m */; };
+		9D9DBF3F1E5724CB00E5F4FD /* HHSpecialAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBF3E1E5724CB00E5F4FD /* HHSpecialAPIManager.m */; };
+		9D9DBF421E57257600E5F4FD /* HHSomeViewTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBF411E57257600E5F4FD /* HHSomeViewTranslator.m */; };
+		9DF68AF81E504DF200596FE1 /* HHNetworkAPIRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68AF71E504DF200596FE1 /* HHNetworkAPIRecorder.m */; };
+		9DF68AFB1E504E7A00596FE1 /* HHNetworkTaskGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68AFA1E504E7A00596FE1 /* HHNetworkTaskGroup.m */; };
+		9DF68AFF1E504FD900596FE1 /* HHUserAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68AFE1E504FD900596FE1 /* HHUserAPIManager.m */; };
+		9DF68B021E507A2C00596FE1 /* HHTopicAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68B011E507A2C00596FE1 /* HHTopicAPIManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D116E5D1E4ED53800DD6EB7 /* TAFNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAFNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D116E611E4ED53800DD6EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D116E631E4ED53800DD6EB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D116E641E4ED53800DD6EB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D116E661E4ED53800DD6EB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D116E671E4ED53800DD6EB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D116E6A1E4ED53800DD6EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D116E6C1E4ED53800DD6EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D116E6F1E4ED53800DD6EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D116E711E4ED53800DD6EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D116E7A1E4ED99500DD6EB7 /* HHAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAppContext.h; sourceTree = "<group>"; };
+		9D116E7B1E4ED99500DD6EB7 /* HHAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAppContext.m; sourceTree = "<group>"; };
+		9D116E7D1E4ED99500DD6EB7 /* HHAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAPIManager.h; sourceTree = "<group>"; };
+		9D116E7E1E4ED99500DD6EB7 /* HHAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAPIManager.m; sourceTree = "<group>"; };
+		9D116E7F1E4ED99500DD6EB7 /* HHUploadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUploadFile.h; sourceTree = "<group>"; };
+		9D116E801E4ED99500DD6EB7 /* HHUploadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUploadFile.m; sourceTree = "<group>"; };
+		9D116E811E4ED99500DD6EB7 /* HHNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetworkClient.h; sourceTree = "<group>"; };
+		9D116E821E4ED99500DD6EB7 /* HHNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetworkClient.m; sourceTree = "<group>"; };
+		9D116E831E4ED99500DD6EB7 /* HHURLRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHURLRequestGenerator.h; sourceTree = "<group>"; };
+		9D116E841E4ED99500DD6EB7 /* HHURLRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHURLRequestGenerator.m; sourceTree = "<group>"; };
+		9D116E851E4ED99500DD6EB7 /* HHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHService.h; sourceTree = "<group>"; };
+		9D116E861E4ED99500DD6EB7 /* HHService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHService.m; sourceTree = "<group>"; };
+		9D116E8D1E4EDA9800DD6EB7 /* HHNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNetworkConfig.h; sourceTree = "<group>"; };
+		9D116E911E4EF5D400DD6EB7 /* HHNetworkCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetworkCacheManager.h; sourceTree = "<group>"; };
+		9D116E921E4EF5D400DD6EB7 /* HHNetworkCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetworkCacheManager.m; sourceTree = "<group>"; };
+		9D116E941E4EF9D800DD6EB7 /* HHNetworkTaskError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNetworkTaskError.h; sourceTree = "<group>"; };
+		9D9DBF371E571EE100E5F4FD /* HHNormalAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNormalAPIManager.h; sourceTree = "<group>"; };
+		9D9DBF381E571EE100E5F4FD /* HHNormalAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNormalAPIManager.m; sourceTree = "<group>"; };
+		9D9DBF3D1E5724CB00E5F4FD /* HHSpecialAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSpecialAPIManager.h; sourceTree = "<group>"; };
+		9D9DBF3E1E5724CB00E5F4FD /* HHSpecialAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSpecialAPIManager.m; sourceTree = "<group>"; };
+		9D9DBF401E57257600E5F4FD /* HHSomeViewTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSomeViewTranslator.h; sourceTree = "<group>"; };
+		9D9DBF411E57257600E5F4FD /* HHSomeViewTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSomeViewTranslator.m; sourceTree = "<group>"; };
+		9DF68AF61E504DF200596FE1 /* HHNetworkAPIRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetworkAPIRecorder.h; sourceTree = "<group>"; };
+		9DF68AF71E504DF200596FE1 /* HHNetworkAPIRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetworkAPIRecorder.m; sourceTree = "<group>"; };
+		9DF68AF91E504E7A00596FE1 /* HHNetworkTaskGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetworkTaskGroup.h; sourceTree = "<group>"; };
+		9DF68AFA1E504E7A00596FE1 /* HHNetworkTaskGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetworkTaskGroup.m; sourceTree = "<group>"; };
+		9DF68AFD1E504FD900596FE1 /* HHUserAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserAPIManager.h; sourceTree = "<group>"; };
+		9DF68AFE1E504FD900596FE1 /* HHUserAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserAPIManager.m; sourceTree = "<group>"; };
+		9DF68B001E507A2C00596FE1 /* HHTopicAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTopicAPIManager.h; sourceTree = "<group>"; };
+		9DF68B011E507A2C00596FE1 /* HHTopicAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTopicAPIManager.m; sourceTree = "<group>"; };
+		CD427C393F4B721B570B1E60 /* libPods-TAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39A8D314713E17E7663F5A0 /* Pods-TAFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAFNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAFNetworking/Pods-TAFNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		F1616685F3D65E62A6B13CB5 /* Pods-TAFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAFNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAFNetworking/Pods-TAFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D116E5A1E4ED53800DD6EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715312FBA768C9105F5B5E6C /* libPods-TAFNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E229C301BD600EEF1478604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1616685F3D65E62A6B13CB5 /* Pods-TAFNetworking.debug.xcconfig */,
+				D39A8D314713E17E7663F5A0 /* Pods-TAFNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D116E541E4ED53800DD6EB7 = {
+			isa = PBXGroup;
+			children = (
+				9D116E5F1E4ED53800DD6EB7 /* TAFNetworking */,
+				9D116E5E1E4ED53800DD6EB7 /* Products */,
+				8E229C301BD600EEF1478604 /* Pods */,
+				C44A72228F969271DC18FED7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D116E5E1E4ED53800DD6EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D116E5D1E4ED53800DD6EB7 /* TAFNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D116E5F1E4ED53800DD6EB7 /* TAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9D116E791E4ED92700DD6EB7 /* Network */,
+				9D116E631E4ED53800DD6EB7 /* AppDelegate.h */,
+				9D116E641E4ED53800DD6EB7 /* AppDelegate.m */,
+				9D116E661E4ED53800DD6EB7 /* ViewController.h */,
+				9D116E671E4ED53800DD6EB7 /* ViewController.m */,
+				9D116E601E4ED53800DD6EB7 /* Supporting Files */,
+			);
+			path = TAFNetworking;
+			sourceTree = "<group>";
+		};
+		9D116E601E4ED53800DD6EB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D116E691E4ED53800DD6EB7 /* Main.storyboard */,
+				9D116E6C1E4ED53800DD6EB7 /* Assets.xcassets */,
+				9D116E6E1E4ED53800DD6EB7 /* LaunchScreen.storyboard */,
+				9D116E711E4ED53800DD6EB7 /* Info.plist */,
+				9D116E611E4ED53800DD6EB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D116E791E4ED92700DD6EB7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9DF68AFC1E504F6600596FE1 /* Utils */,
+				9DF68AF51E5047DC00596FE1 /* NetworkClient */,
+				9DF68AF31E50479700596FE1 /* APIManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9DF68AF31E50479700596FE1 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				9D116E7D1E4ED99500DD6EB7 /* HHAPIManager.h */,
+				9D116E7E1E4ED99500DD6EB7 /* HHAPIManager.m */,
+				9DF68B001E507A2C00596FE1 /* HHTopicAPIManager.h */,
+				9DF68B011E507A2C00596FE1 /* HHTopicAPIManager.m */,
+				9DF68AFD1E504FD900596FE1 /* HHUserAPIManager.h */,
+				9DF68AFE1E504FD900596FE1 /* HHUserAPIManager.m */,
+				9D9DBF371E571EE100E5F4FD /* HHNormalAPIManager.h */,
+				9D9DBF381E571EE100E5F4FD /* HHNormalAPIManager.m */,
+				9D9DBF3D1E5724CB00E5F4FD /* HHSpecialAPIManager.h */,
+				9D9DBF3E1E5724CB00E5F4FD /* HHSpecialAPIManager.m */,
+				9D9DBF401E57257600E5F4FD /* HHSomeViewTranslator.h */,
+				9D9DBF411E57257600E5F4FD /* HHSomeViewTranslator.m */,
+			);
+			name = APIManager;
+			sourceTree = "<group>";
+		};
+		9DF68AF51E5047DC00596FE1 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				9D116E8D1E4EDA9800DD6EB7 /* HHNetworkConfig.h */,
+				9D116E941E4EF9D800DD6EB7 /* HHNetworkTaskError.h */,
+				9D116E851E4ED99500DD6EB7 /* HHService.h */,
+				9D116E861E4ED99500DD6EB7 /* HHService.m */,
+				9D116E7F1E4ED99500DD6EB7 /* HHUploadFile.h */,
+				9D116E801E4ED99500DD6EB7 /* HHUploadFile.m */,
+				9D116E811E4ED99500DD6EB7 /* HHNetworkClient.h */,
+				9D116E821E4ED99500DD6EB7 /* HHNetworkClient.m */,
+				9D116E831E4ED99500DD6EB7 /* HHURLRequestGenerator.h */,
+				9D116E841E4ED99500DD6EB7 /* HHURLRequestGenerator.m */,
+				9D116E911E4EF5D400DD6EB7 /* HHNetworkCacheManager.h */,
+				9D116E921E4EF5D400DD6EB7 /* HHNetworkCacheManager.m */,
+			);
+			name = NetworkClient;
+			sourceTree = "<group>";
+		};
+		9DF68AFC1E504F6600596FE1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D116E7A1E4ED99500DD6EB7 /* HHAppContext.h */,
+				9D116E7B1E4ED99500DD6EB7 /* HHAppContext.m */,
+				9DF68AF61E504DF200596FE1 /* HHNetworkAPIRecorder.h */,
+				9DF68AF71E504DF200596FE1 /* HHNetworkAPIRecorder.m */,
+				9DF68AF91E504E7A00596FE1 /* HHNetworkTaskGroup.h */,
+				9DF68AFA1E504E7A00596FE1 /* HHNetworkTaskGroup.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C44A72228F969271DC18FED7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD427C393F4B721B570B1E60 /* libPods-TAFNetworking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D116E5C1E4ED53800DD6EB7 /* TAFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D116E741E4ED53800DD6EB7 /* Build configuration list for PBXNativeTarget "TAFNetworking" */;
+			buildPhases = (
+				175D95AFA7F35D5EB18284FD /* [CP] Check Pods Manifest.lock */,
+				9D116E591E4ED53800DD6EB7 /* Sources */,
+				9D116E5A1E4ED53800DD6EB7 /* Frameworks */,
+				9D116E5B1E4ED53800DD6EB7 /* Resources */,
+				851955F3EDF4710DF361D513 /* [CP] Embed Pods Frameworks */,
+				1160A16BEE2EDE2932255D6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAFNetworking;
+			productName = TAFNetworking;
+			productReference = 9D116E5D1E4ED53800DD6EB7 /* TAFNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D116E551E4ED53800DD6EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "黑花白花";
+				TargetAttributes = {
+					9D116E5C1E4ED53800DD6EB7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9D116E581E4ED53800DD6EB7 /* Build configuration list for PBXProject "TAFNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D116E541E4ED53800DD6EB7;
+			productRefGroup = 9D116E5E1E4ED53800DD6EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D116E5C1E4ED53800DD6EB7 /* TAFNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D116E5B1E4ED53800DD6EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D116E701E4ED53800DD6EB7 /* LaunchScreen.storyboard in Resources */,
+				9D116E6D1E4ED53800DD6EB7 /* Assets.xcassets in Resources */,
+				9D116E6B1E4ED53800DD6EB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1160A16BEE2EDE2932255D6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAFNetworking/Pods-TAFNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		175D95AFA7F35D5EB18284FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		851955F3EDF4710DF361D513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAFNetworking/Pods-TAFNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D116E591E4ED53800DD6EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D116E681E4ED53800DD6EB7 /* ViewController.m in Sources */,
+				9DF68AFB1E504E7A00596FE1 /* HHNetworkTaskGroup.m in Sources */,
+				9D116E651E4ED53800DD6EB7 /* AppDelegate.m in Sources */,
+				9D9DBF3F1E5724CB00E5F4FD /* HHSpecialAPIManager.m in Sources */,
+				9D116E881E4ED99500DD6EB7 /* HHAPIManager.m in Sources */,
+				9DF68AFF1E504FD900596FE1 /* HHUserAPIManager.m in Sources */,
+				9D116E891E4ED99500DD6EB7 /* HHUploadFile.m in Sources */,
+				9D116E8B1E4ED99500DD6EB7 /* HHURLRequestGenerator.m in Sources */,
+				9D116E8C1E4ED99500DD6EB7 /* HHService.m in Sources */,
+				9DF68B021E507A2C00596FE1 /* HHTopicAPIManager.m in Sources */,
+				9D116E8A1E4ED99500DD6EB7 /* HHNetworkClient.m in Sources */,
+				9DF68AF81E504DF200596FE1 /* HHNetworkAPIRecorder.m in Sources */,
+				9D116E931E4EF5D400DD6EB7 /* HHNetworkCacheManager.m in Sources */,
+				9D9DBF391E571EE100E5F4FD /* HHNormalAPIManager.m in Sources */,
+				9D9DBF421E57257600E5F4FD /* HHSomeViewTranslator.m in Sources */,
+				9D116E871E4ED99500DD6EB7 /* HHAppContext.m in Sources */,
+				9D116E621E4ED53800DD6EB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D116E691E4ED53800DD6EB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D116E6A1E4ED53800DD6EB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D116E6E1E4ED53800DD6EB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D116E6F1E4ED53800DD6EB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D116E721E4ED53800DD6EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D116E731E4ED53800DD6EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D116E751E4ED53800DD6EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1616685F3D65E62A6B13CB5 /* Pods-TAFNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TAFNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HeiHuaBaiHua.xxx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D116E761E4ED53800DD6EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39A8D314713E17E7663F5A0 /* Pods-TAFNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TAFNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HeiHuaBaiHua.xxx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D116E581E4ED53800DD6EB7 /* Build configuration list for PBXProject "TAFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D116E721E4ED53800DD6EB7 /* Debug */,
+				9D116E731E4ED53800DD6EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D116E741E4ED53800DD6EB7 /* Build configuration list for PBXNativeTarget "TAFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D116E751E4ED53800DD6EB7 /* Debug */,
+				9D116E761E4ED53800DD6EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D116E551E4ED53800DD6EB7 /* Project object */;
+}
