@@ -24,6 +24,7 @@
 		9D9DBF391E571EE100E5F4FD /* HHNormalAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBF381E571EE100E5F4FD /* HHNormalAPIManager.m */; };
 		9D9DBF3F1E5724CB00E5F4FD /* HHSpecialAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBF3E1E5724CB00E5F4FD /* HHSpecialAPIManager.m */; };
 		9D9DBF421E57257600E5F4FD /* HHSomeViewTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBF411E57257600E5F4FD /* HHSomeViewTranslator.m */; };
+		9DEEE3F01E58156800906475 /* HHSomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEE3EF1E58156800906475 /* HHSomeView.m */; };
 		9DF68AF81E504DF200596FE1 /* HHNetworkAPIRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68AF71E504DF200596FE1 /* HHNetworkAPIRecorder.m */; };
 		9DF68AFB1E504E7A00596FE1 /* HHNetworkTaskGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68AFA1E504E7A00596FE1 /* HHNetworkTaskGroup.m */; };
 		9DF68AFF1E504FD900596FE1 /* HHUserAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF68AFE1E504FD900596FE1 /* HHUserAPIManager.m */; };
@@ -63,6 +64,8 @@
 		9D9DBF3E1E5724CB00E5F4FD /* HHSpecialAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSpecialAPIManager.m; sourceTree = "<group>"; };
 		9D9DBF401E57257600E5F4FD /* HHSomeViewTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSomeViewTranslator.h; sourceTree = "<group>"; };
 		9D9DBF411E57257600E5F4FD /* HHSomeViewTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSomeViewTranslator.m; sourceTree = "<group>"; };
+		9DEEE3EE1E58156800906475 /* HHSomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSomeView.h; sourceTree = "<group>"; };
+		9DEEE3EF1E58156800906475 /* HHSomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSomeView.m; sourceTree = "<group>"; };
 		9DF68AF61E504DF200596FE1 /* HHNetworkAPIRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetworkAPIRecorder.h; sourceTree = "<group>"; };
 		9DF68AF71E504DF200596FE1 /* HHNetworkAPIRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNetworkAPIRecorder.m; sourceTree = "<group>"; };
 		9DF68AF91E504E7A00596FE1 /* HHNetworkTaskGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNetworkTaskGroup.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				9D9DBF3E1E5724CB00E5F4FD /* HHSpecialAPIManager.m */,
 				9D9DBF401E57257600E5F4FD /* HHSomeViewTranslator.h */,
 				9D9DBF411E57257600E5F4FD /* HHSomeViewTranslator.m */,
+				9DEEE3EE1E58156800906475 /* HHSomeView.h */,
+				9DEEE3EF1E58156800906475 /* HHSomeView.m */,
 			);
 			name = APIManager;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				9D9DBF3F1E5724CB00E5F4FD /* HHSpecialAPIManager.m in Sources */,
 				9D116E881E4ED99500DD6EB7 /* HHAPIManager.m in Sources */,
 				9DF68AFF1E504FD900596FE1 /* HHUserAPIManager.m in Sources */,
+				9DEEE3F01E58156800906475 /* HHSomeView.m in Sources */,
 				9D116E891E4ED99500DD6EB7 /* HHUploadFile.m in Sources */,
 				9D116E8B1E4ED99500DD6EB7 /* HHURLRequestGenerator.m in Sources */,
 				9D116E8C1E4ED99500DD6EB7 /* HHService.m in Sources */,

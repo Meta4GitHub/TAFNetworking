@@ -6,13 +6,44 @@
 //  Copyright © 2017年 黑花白花. All rights reserved.
 //
 
+#import "HHSomeViewTranslator.h"
+
 #import "HHSpecialAPIManager.h"
+
+@implementation HHSpecialAPIConfiguration
+
+- (id)translateWithResultType:(HHSpecialResult)type sourceResult:(id)result {
+    
+    NSArray *lives = result[@"lives"];
+    NSMutableArray *liveList = [NSMutableArray array];
+    for (NSDictionary *live in lives) {
+        
+        NSString *liveDescription = [NSString stringWithFormat:@"%@ 正在 %@ 直播, 观看人数: %ld", live[@"name"], live[@"city"], [live[@"online_users"] integerValue]];
+        [liveList addObject:liveDescription];
+    }
+    
+    switch (type) {
+        case HHSpecialResultRawValue: return liveList;
+        case HHSpecialResultXXX: return [HHSomeViewTranslator translateSomeViewByResult:liveList];
+        case HHSpecialResultAlertView: return ({
+            
+            UIAlertView *alertView;
+            if ([liveList count] > 0) {
+                NSString *message = [liveList firstObject];
+                alertView = [[UIAlertView alloc] initWithTitle:@"SpecialRequest" message:message delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+            }
+            alertView;
+        });
+    }
+}
+
+@end
 
 @implementation HHSpecialAPIManager
 
-- (NSNumber *)fetchNearLiveListWithUserId:(NSUInteger)userId isWomen:(BOOL)isWomen translator:(id<HHTranslator>)translator completionHandler:(HHNetworkTaskCompletionHander)completionHandler {
+- (NSNumber *)fetchNearLiveListWithUserId:(NSUInteger)userId isWomen:(BOOL)isWomen resultType:(HHSpecialResult)type completionHandler:(HHNetworkTaskCompletionHander)completionHandler {
     
-    HHDataAPIConfiguration *config = [HHDataAPIConfiguration new];
+    HHSpecialAPIConfiguration *config = [HHSpecialAPIConfiguration new];
     config.urlPath = @"http://116.211.167.106/api/live/aggregation";
     config.requestType = HHNetworkRequestTypeGet;
     config.requestParameters = @{@"uid" : @(userId),
@@ -21,32 +52,11 @@
         
         if (!error) {
             
-            //            网络请求没问题 但是数据不符合要展示的样式 就在这里格式化错误
-            //            if (xxx) {
-            //                error = HHError(@"xxx", HHNormalAPIError0);
-            //            } else if (yyy) {
-            //                error = HHError(@"yyy", HHNormalAPIError0);
-            //            } else if (zzz) {
-            //                error = HHError(@"zzz", HHNormalAPIError0);
-            //            }
-            
             NSArray *lives = result[@"lives"];
             if (lives.count == 0) {
                 error = HHError(HHNoDataErrorNotice, HHNetworkTaskErrorNoData);
             } else {
-                
-                NSMutableArray *liveList = [NSMutableArray array];
-                for (NSDictionary *live in lives) {
-                    
-                    NSString *liveDescription = [NSString stringWithFormat:@"%@ 正在 %@ 直播, 观看人数: %ld", live[@"name"], live[@"city"], [live[@"online_users"] integerValue]];
-                    [liveList addObject:liveDescription];
-                }
-                
-                if ([translator respondsToSelector:@selector(translateResult:)]) {
-                    result = [translator translateResult:liveList];
-                } else {
-                    result = liveList;
-                }
+                result = [config translateWithResultType:type sourceResult:result];
             }
         }
         
