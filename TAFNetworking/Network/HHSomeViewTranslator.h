@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface HHSomeViewTranslator : NSObject
+#import "HHSomeView.h"
+@interface HHSomeViewTranslator : NSObject<HHSomeViewTranslator>
+
+
 
 @end

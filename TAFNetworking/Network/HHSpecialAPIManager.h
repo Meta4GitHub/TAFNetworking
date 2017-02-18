@@ -8,14 +8,19 @@
 
 #import "HHAPIManager.h"
 
-@protocol HHTranslator <NSObject>
+typedef enum : NSUInteger {
+    HHSpecialResultRawValue,
+    HHSpecialResultAlertView,
+    HHSpecialResultXXX
+} HHSpecialResult;
 
-- (UIAlertView *)translateResult:(id)result;
+@interface HHSpecialAPIConfiguration : HHDataAPIConfiguration
+
+- (id)translateWithResultType:(HHSpecialResult)type sourceResult:(id)result;
 
 @end
 
 @interface HHSpecialAPIManager : HHAPIManager
 
-- (NSNumber *)fetchNearLiveListWithUserId:(NSUInteger)userId isWomen:(BOOL)isWomen translator:(id<HHTranslator>)translator completionHandler:(HHNetworkTaskCompletionHander)completionHandler;
-
+- (NSNumber *)fetchNearLiveListWithUserId:(NSUInteger)userId isWomen:(BOOL)isWomen resultType:(HHSpecialResult)type completionHandler:(HHNetworkTaskCompletionHander)completionHandler;
 @end

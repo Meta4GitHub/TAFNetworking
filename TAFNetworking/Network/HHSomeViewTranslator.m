@@ -10,15 +10,10 @@
 
 @implementation HHSomeViewTranslator
 
-- (UIAlertView *)translateResult:(id)result {
++ (HHSomeView *)translateSomeViewByResult:(id)result {
     
-    if ([result isKindOfClass:[NSArray class]] && [result count] > 0) {
-        
-        NSString *message = [result firstObject];
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"SpecialRequest" message:message delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-        return alertView;
-    }
     return nil;
 }
+
 
 @end
