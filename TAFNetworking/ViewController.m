@@ -230,7 +230,7 @@
 }
 
 - (void)specialRequest {
-    [[HHSpecialAPIManager new] fetchNearLiveListWithUserId:133825214 isWomen:YES translator:[HHSomeViewTranslator new] completionHandler:^(NSError *error, id result) {
+    [[HHSpecialAPIManager new] fetchNearLiveListWithUserId:133825214 isWomen:YES resultType:HHSpecialResultAlertView completionHandler:^(NSError *error, id result) {
         if (!error) {
             [result show];
         } else {
