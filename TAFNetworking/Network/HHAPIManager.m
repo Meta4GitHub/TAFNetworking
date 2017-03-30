@@ -93,8 +93,14 @@
     if (config.cacheValidTimeInterval > 0) {
         
         NSMutableString *mString = [NSMutableString stringWithString:config.urlPath];
-        [config.requestParameters enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-            [mString appendFormat:@"&%@=%@",key, obj];
+        NSMutableArray *requestParameterKeys = [config.requestParameters.allKeys mutableCopy];
+        if (requestParameterKeys.count > 1) {
+            [requestParameterKeys sortedArrayUsingComparator:^NSComparisonResult(NSString * _Nonnull obj1, NSString * _Nonnull obj2) {
+                return [obj1 compare:obj2];
+            }];
+        }
+        [requestParameterKeys enumerateObjectsUsingBlock:^(NSString *  _Nonnull key, NSUInteger idx, BOOL * _Nonnull stop) {
+            [mString appendFormat:@"&%@=%@",key, config.requestParameters[key]];
         }];
         cacheKey = [self md5WithString:[mString copy]];
         HHNetworkCache *cache = [HHCacheManager objcetForKey:cacheKey];
